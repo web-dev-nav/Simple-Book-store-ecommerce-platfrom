@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="Navjotsingh_BookStore.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+     <link rel="stylesheet" href="https://bootswatch.com/5/solar/bootstrap.css">
+     <link rel="stylesheet" href="https://bootswatch.com/_vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+</head>
+<body>
+   <asp:ContentPlaceHolder ID="Navbar" runat="server">
+
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+          <div class="container-fluid" bis_skin_checked="1">
+            <a class="navbar-brand" href="#">Navjot BookStore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor02" bis_skin_checked="1">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                  <a class="nav-link active"  href="Default">Home
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Products">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Cart">Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Login">Login</a>
+                </li>
+       
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+   </asp:ContentPlaceHolder>
+
+<main role="main">
+    <asp:ContentPlaceHolder ID="Maincontent" runat="server">
+    </asp:ContentPlaceHolder>
+</main>
+
+<footer class="text-muted">
+    <div class="container">
+    <p class="float-right">
+    <a href="#">Back to top</a>
+    </p>
+    <p>Made by Navjot Singh</p>
+   
+    </div>
+</footer>
+<script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
